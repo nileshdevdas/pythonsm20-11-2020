@@ -1,0 +1,316 @@
+--------------------------------------------------------------------------------
+Local Setup :  
+1.  Python for windows : 3.8
+	install a required version of python 
+	PATH:
+	Computer Setting -- Environment Variable 
+	PATH=c:\xxxxx;d:\sdddx;d:\tools\python;
+	If you install a python on you machine and install 
+	c:\python38 
+	PATH=c:\python38;<otherpath>
+2.   IDE : 
+	Visual Studio Code 
+	PyCharm :- 
+	Juypter Notebook 
+3.    Browser and Internet access : 
+--------------------------------------------------------------------------------
+Python is interpreted : 
+     SCripted 
+     Program 
+
+     Functional Programming 
+	Librarary ? 
+
+READ -> EVAL -> PRINT -> LOOP 
+
+REad 
+ eval 
+   print 
+     loop 
+------------------------------------------------------------------------------
+Does python have a datatype :  Yes but is is mandatory NO 
+What is python is dynamically typed language :- 
+
+a = 10 
+a = "Nilesh" 
+a = []
+a = {}
+a = def 
+
+
+.py ---> Pure text 
+
+python ---> REPL 
+python ----> .py 
+
+1. Is python strictly typed Language : Is dynamically 
+	datatype need not be mentioned 
+	int 
+2.  Is not a  language that is using any kind termiator or block 
+	python is indented language 
+
+	in python everthing is indented
+	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx: 
+	   yyyyyyyyyyyyyyyyyyyyyyyyyyyyyy: 
+              zzzzzzzzzzzzzzzzzzzzzzzzzzzzzz: 
+		sdsdsdslkjlskjklsjdfklsjdf
+		sdfsdfsadfasdfasdfasdasdfasd
+	        asdfasdfasdfasdfasdfdsffdsf
+	      asdfasdfasdfasdfasdfasdf
+	      asdfasdfasdfasdfasdfasdf
+	      asdfasdfasdfasdfasdsdfasdf
+	   asdfasdfasdfasdfasdfasdf
+	   asdfasdfasdfasdfasdfasdf
+
+
+
+
+
+
+
+-------------------------------------------------------------------------
+1.  cmd prompt 
+2.  python -V  to check the version of your python 
+3.  python 
+>>  a = 10 
+>>  print(a) 
+
+Data Types in python 
+int integeger 
+a = 10 
+float 
+a = 1.1 
+str 
+a  = 'xsss' 
+None 
+a = None 
+list 
+a  = [1, 2,3,4, 5]
+set  = {1,2,3,4,5}
+dict  = {'x' : 'user' , 'y' : 'password'}
+tuple  
+a = (1,2,3,4) 
+
+
+
+
+int  = 
+float = 
+str  =         . raw  / unicode / standrard
+None = 
+list  =  []
+list.append() // mutable + indexed + allow duplicates 
+
+set.add()   // mutable + not indexed + does not allow duplicates 
+
+dict       //  mutable + unique keys + does not allow duplicate key value can be anythoing 
+
+tuple      // a list but imuttable 
+
+
+
+----------------------------------------------------------
+a) Structured Interpreted dynamically typed language 
+b) REPL (Read Eval Print Loop) 
+c) Variable and everything is a variable 
+d) Runa as standalone ---> .py file (Interactive mode) 
+e) Ptyhon 3.x (3.9) 
+f) int , float, str, set, list, dict, tuple , None 
+g) Built in functions 
+
+--------------------------------------------------------------------------------data types
+  int 
+  float 
+  str 
+  bool 
+  None 
+  list 
+  tuple 
+  dict 
+  set 
+ 
+keywords
+  class
+  pass
+  import  
+  False 
+  elif
+  if 
+  while 
+  or 
+  in 
+ and 
+ with 
+ try 
+ except 
+ finally 
+  break 
+ continue 
+await 
+ else 
+raise 
+yeild 
+ del 
+
+builtins 
+  print()
+  len()
+  sum()
+  min()
+  max()
+  input()
+  list()
+  set()
+  dict()
+  float()
+  int() 
+  ......... 
+-------------------------------------------------------------------------------
+.net  (nuget) 
+nodejs  (npm) 
+java/scala  (maven)
+
+
+Central repository of dependencies : 
+I want to connect to a database called :- postgres 
+pypi 
+
+pip (Python Package Installer) 
+pip install <packageName> 
+
+a developer 1 : X who write a code in python and he uses some 10 libraries in his code :- 
+He needs to checkin his code into a central scm (Source Contro Management) GIT ---> 
+Does he also check in the libraries with it 000> NO he does not ===> 
+He simply checks in only his code 000> 
+
+a Developer2 want to use this code and run the code written by developer 1 : 
+how does he come to know   what code and what libraries were used by developer 
+
+the answer is :-   
+pip freeze 
+
+
+
+
+Deveoper1 - Write a code and he imports a lot dependencies from pypi 
+		pip install xxxx 
+		pip install yyyy 
+		pip install zzzz 
+
+
+	puts his code in github ---> 
+	Developer --  
+	pip freeze > requirements.txt  (10 package)
+
+Developer2  tries to use the code in his machine pulling the code github 
+		nothing works 
+
+ 
+
+
+
+1. PyPi is central hub on the internet where alll the libraries / public available libraries are there 
+
+pip install : you installed 1 library for yourself 
+
+pip freeze  >  requirements.txt 
+
+more requirements.txt 
+
+nilesh.devdas@vinsys.com 
+
+itfm.support@vinsys.com 
+siddharth@vinsys.com 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
