@@ -221,6 +221,158 @@ nilesh.devdas@vinsys.com
 
 itfm.support@vinsys.com 
 siddharth@vinsys.com 
+Function --  Function in script format where we can write our own function with out  class 
+Method : -- later When we have object programming (Classes ) 
+
+
+	a  Function is also a variable 
+	
+	def myfunction():
+	    // function body start
+	
+	
+	def myfunction(a, b , c ,d ):
+		/// 
+
+	def myfunction(a , b , c=10):
+		// deffault should always be on the right and not from 		
+		the  left
+
+	def myfunction(a , b , c = 10, d = 20 , e = None , f = 'xyz') 
+		// 
+
+	myfunction(1,2)
+
+	1. There is no overloading functionality in term of python is more procedural 
+	
+
+
+
+
+1. WHat is a construct of function 
+	def  function_name(fn_param , fn_paramn=value): 
+		body 
+		body 
+		body 
+	
+	def add_numbers(a): (With sing args)
+		pass
+
+	def add_numbers(a, b ): (multiple args)
+		pass
+ 
+	def add_numbers(a, b = 10 ): (with default values)
+		pass
+
+	def add_numbers(a, b , c =10): (with default values)
+	  	pass
+
+	def add_numbers(*a):  (args varargs)
+		pass
+
+	def add_numbers(**a):  (args kwargs)
+		pass
+	
+	def add_numbers(x, y): functions can return values 
+		return x+y 
+
+	function can accept functions a parameters 
+	functions can return functions are retunr type 
+
+	every thing is a variable ........................ so   every thing can be passed or returned .......  ?
+
+
+
+
+2. how to invoke a function 
+	function_name(9333, 2989383)  // this must follow a sequence
+	function_name(fn_paramn=9393, fn_param=3993) // this does not mandate 
+							 any sequence 
+	    
+3.  a function can have a parameter with default value however the default should always be on the right (not on the left) 
+	def fn(a, b , c =10 ) : 
+		pass 
+	and not 
+	def fn(a=10, b , c): 
+		pass
+	the function default value for parameters are always to the right 
+
+
+4.  function can have variable args 
+	varargs is   *args 
+	def fn(*args): 
+		args == tuple that is passed to you 
+
+	fn(1,2,3,4,5,6,.............) all the params will come to you as tuple 
+
+
+5,   can functions have kword args (instead of tuple can i get a dictionary ) 
+
+	def fn(**args): 
+		print(args) 
+	{'param': 3 , param : 3}
+	user, 
+	passwird 
+	url 
+			
+dbConnect(**kwargs)
+		
+
+
+
+
+
+
+def function_name(fn_param_1 , fn_param_2 ,  fn_param_n):
+    // here starts your function body 
+
+
+1. a function cannot be overloaded ;; it will get overrwritted 
+2. a function can have parameter (n) 
+3. a function parameters can have default value --> should be always on the right 
+4. a funtion can have vargs   (*args)  = is variable argument-. passed as tuple 
+	a(1,3,4,5)
+5. a function  can have kwargs (*kwargs) = is varaible argument passed as  dict 
+	a(p1=1, p2=3) 
+6.  a function can have both vargs as well kwargs   so both variations supported 
+	a(*args, **kwargs)
+	
+	---> a (1,2,3,4, a=10, b=20) 
+		a and b will go as dict values and 1,2,3,4 will go as tuple 
+7.  a function can accept a function as a  parameter 
+8.  a function can return a value  or a function also 
+9.  a function can be patched 
+10.  a lambda is also a anonymous single line function whcih is callable 
+
+
+Functions : 
+What is exception handling :-  
+
+Flow control :- 
+
+		 block code which you wish to try 
+		 block of code that would expect to do some wrong and still allow the program to continue or handle it so that it does abrupt out 
+
+	try:
+	    line that you want to try 
+	    db = connect_to_db(); 
+	    file = readMillionLines();
+	    1/0
+	    db.close() // what happens to my open connection 
+	except: 
+	    line that you want handle return ot alternative activyt 
+	finally: 
+		// whethere is expection 
+		// whether there is no exception what so ever in the case 
+		// both condition the finally will get called 
+		// releaser /// Resoource Releasing block 
+	
+
+
+1. Resource Leak 
+2. Connnection Leak 
+3, File Handle 
+4  Activity in the flow could result in memory leak 
 
 
 
@@ -228,31 +380,32 @@ siddharth@vinsys.com
 
 
 
+try:
+   # the lines of code that you wish to execute goes goes here.... 
+except DivideByZeroError as e : 
+   # handling of the exception
+finally: 
+   # whatever it takes whatever it goes with i will be consider as always to 
+	 if exception still i am executed 
+	 if no exception still execute 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+try: 
+	try : 
+		try:
+		     #
+		except:
+		     #
+		finally:
+		     # 
+	except:
+	    #
+	finally:
+	    #
+except:
+    # 
+finally: 
+    #
 
  
 
@@ -296,9 +449,34 @@ siddharth@vinsys.com
 
 
 
+a.  Data Types 
+b. built in function 
+	range
+	input
+	print 
+	
+c. if elif while for 
 
+e.  .py 
 
+f.  def func_name():
+ 	pass 
 
+g. for , while , if , 
+
+h. open file --> getting data 
+
+i. dict . set , tuple 
+
+j.  input parameter (input())
+
+k.   pass args  import sys  --> sys.argv 
+
+l.   visual studio code  and usnderstand how write code in vscode with the  run options 
+
+k .  installed and configured pyrealine --> pip install  ----> 
+
+l.   pip freeze and pip install and 
 
 
 
