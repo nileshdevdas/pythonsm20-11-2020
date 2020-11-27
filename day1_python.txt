@@ -406,8 +406,193 @@ except:
     # 
 finally: 
     #
+Module and Packages ? 
+A module is different and Pacakage is diffrent 
 
- 
+import 
+
+import abc
+
+abc.py 
+abc 
+
+
+abc.py 
+   hello()
+
+pqr.py
+   hello() 
+
+import abc 
+	abc.hello()
+
+import pqr 
+	pqr.hello()
+
+
+
+from abc import hello as hello1  (aliasing) (Function aliasig)
+
+
+
+What is a module ? 
+a module is a simple python file any python file is a module which can be imported 
+
+### utils.py #### 
+### the demo1 is a method in the Utils secton
+def demo1():
+    pass 
+
+def demo2():
+    pass 
+
+def demo3():
+    pass 
+
+
+##### demo ####### 
+import utils  ### utils should be in the path and should be available in the 
+utils.demo1();
+utils.demo2();
+utils.demo3();
+
+
+import * from utils; 
+
+demo1()
+demo2()
+demo3()
+
+from utils import demo1 as d1 
+
+d1()
+
+
+
+
+# i do have the activity mapped to the  import inside a function 
+# can i import at file level *Yes it will become globals 
+# can i import at function level *Yes it will become locals
+# can i import all at a one time  using * yes may cause ambigous imports 
+# can i import only  the module  Yes  but invocation module.function 
+# can i import with aliase and single function Yes this is the best practice 
+# does import a module and import a package is differnet to end user no for python yes 
+
+
+1.  Every file in python is  a module 
+2.  Every file can be imported 
+3.  When a file imported it executes everything in that file which is a statement and those function will be called when you call them 
+	technically you should normally have function only in modules 
+4.  When a file is imported the namespace is most important part 
+	import utils 
+		the namespace is utils 
+
+	from utils import * 
+		you have imported all the function fomr the utils module to you current . namespace so the function now in the utils is not directly accessible 5. Kindly note the alias is the saviour and that the only way you can import multiple function in your import even if they are ambigious 
+
+import utils 
+import helpers 
+import sys 
+import os 
+import math 
+import re 
+
+from utils import x 
+from utils import x as y 
+from utils import * 
+
+
+
+
+a pacakage is different then a module. 
+The package is different then a module. and tthe why 
+
+|------utils 
+	 |---- __init__.py
+	 |---- helpers.py
+	 |---- connect.py 
+	 |----- another.py 
+	 |---- anotherone.py 
+
+A package is  folder 
+	it has special file __init__.py 
+	this file get executed by default ireespective of any call to it 
+
+
+
+
+
+
+
+
+python supports classes but its not fully object oriented 
+
+its like :python suipports more of object based .. rather than object oriented 
+
+1. Can i define a class (Yes) 
+2. Can i extend a class (Yes) 
+3. Do i have constructor (Yes Pseudo) 
+4. Do i have destructors (Yes Pseudo) 
+5. Do i have overides  (Yes) 
+6. Do i have overloads (No) (Variables) 
+7. Do i support abstraction (Yes) with help of abc (Abstract Base Classes) 
+8. Can create objects yes 
+9. Do I have Static methods (Class Methods) :(Yes)
+10. Do I have object level variables (instance varaibles) 
+11. Do i support constructor Super  yes (Intheritence) 
+12. Do i support interfaces (No) 
+13. Do i support Mulitple Interhitence (No) 
+14. Do i support mulitlevel inheritence (Yes) 
+15. Do i support object refrencing and garbaging *yes (Del) 
+16.  Does it have access modifer yes  (_ & __) 
+				_ , __ , __x__, x__
+How to write a class :- 
+class Employee: 
+	pass 
+
+
+Why should i debug code  ?
+Runtime value inpsection 
+Breaks Conditional Breaking Specific to a location 
+Step In / Step Over / Resume Proceed  . Terminate / 
+	A():
+	 B()
+           c()
+	     D()
+
+
+how you debug and how you profile 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -477,6 +662,70 @@ l.   visual studio code  and usnderstand how write code in vscode with the  run 
 k .  installed and configured pyrealine --> pip install  ----> 
 
 l.   pip freeze and pip install and 
+================================================================================unit testing with python :- 
+
+def add(a ,b): 
+	return   a + b 
+
+
+How does a developer write a code : 
+	Business Understanding for me is a understanding of very requirements 
+	can be must have .... requirement 
+
+In world Agile and Devops driven world we should be first talking about the :- 
+	development of the Test Case fierst and development 
+
+Ask a project manager how must is code done ? 50%
+	If i have test cases and they passed which means i have written  the code 
+	if i dont have test cases consider this as a guess work 
+	100 ---> 100 Test cases ---> Pass
+
+	TDD (Test Driven Development) 
+
+	test_login()
+		login("" , "passwotrd")
+		
+	test_logout():
+		fail()
+	
+	test_change_password():
+		fail()
+
+	test_register_user():
+		fail()
+
+
+Selenium comes in picture for the web based UI testing : 
+
+1.  install ---> 
+	
+pip install pytest 
+pip install pytest-html
+pip install pytest-cov
+
+
+Goto https://chromedriver.chromium.org/downloads
+Check your version of Chrome : 
+Once you have checked your version of chrome :- download the corressponding chrome driver : 
+Place the crhome driver in a folder and set it to your path 
+open cmd prompt and check 	--=> where chromedriver 
+
+pip install selenium --- Installs the selenium test library
+Then write your first test 
+
+from selenium import webdriver
+
+#pip install selenium
+def test_google_home():
+    driver = webdriver.Chrome()
+    driver.maximize_window()
+    driver.get("https://www.google.com")
+    assert "Google"  == driver.title
+    driver.close
+
+pytest test_selenium.py
+
+
 
 
 
